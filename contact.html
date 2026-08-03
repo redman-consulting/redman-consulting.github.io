@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Redman Consulting</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital@1&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="wrap">
+  <div class="contact-page">
+    <h1>Get in Touch</h1>
+    <p>Interested in working together, or just want to talk through a planning problem? Send a note below — this form is a demo and doesn't submit anywhere yet.</p>
+    <form onsubmit="event.preventDefault(); document.getElementById('formDone').style.display='block'; this.reset();">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" type="text" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+      </div>
+      <div class="form-row">
+        <label for="org">Organization</label>
+        <input id="org" type="text" />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <div class="form-note">Demo form — no message is actually sent.</div>
+      <button class="btn btn-solid" type="submit">Send Message</button>
+      <p id="formDone" style="display:none;margin-top:16px;color:var(--rc-orange);font-weight:700">Thanks — this is a demo, so nothing was actually sent, but that's exactly what a visitor would see.</p>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script>
+  renderHeader({ title: "Contact", page: "contact" });
+  renderFooter();
+</script>
+</body>
+</html>

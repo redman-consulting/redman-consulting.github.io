@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog — Redman Consulting</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital@1&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main class="wrap">
+  <div style="padding-top:44px">
+    <h1 style="color:var(--c-stewardship)">Blog Landing Page</h1>
+    <p style="color:var(--rc-muted);max-width:640px">Every post lives under one of eight practice areas. Pick a category to see its articles, or click straight through to one below.</p>
+  </div>
+  <div class="category-grid" id="categoryGrid"></div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script>
+  renderHeader({ title: "Blog", page: "blog" });
+  renderFooter();
+  renderCategoryGrid();
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Redman Consulting — Strategic Planning for a Changing Planet</title>
+<meta name="description" content="Redman Consulting: transportation and mobility planning, grant strategy, and public-policy consulting. Demo site." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital@1&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <section class="intro-section wrap">
+    <div class="intro-grid">
+      <div class="intro-copy">
+        <p>Redman Consulting helps public agencies, transit authorities, and nonprofits turn complex planning problems into fundable, workable strategy. Thirty years of practice sit behind every project — transportation, mobility management, land use, and the funding structures that make any of it possible.</p>
+        <p>The work moves across eight overlapping areas of practice, shown at right. Every planning question eventually touches more than one of them — that's the idea behind the wheel: <em>everything is linked.</em></p>
+        <p><strong>Explore a category</strong> to see how it connects to real project work, or head to the <a href="blog.html" style="color:var(--rc-orange);text-decoration:underline">Blog</a> for write-ups organized the same way.</p>
+        <a class="btn btn-solid" href="about.html">See Project Experience</a>
+      </div>
+
+      <div class="intro-wheel">
+        <div class="wheel-wrap" id="wheel">
+          <div class="wheel-center">
+            <img src="logo.png" alt="Redman Consulting" />
+          </div>
+        </div>
+        <p class="wheel-hint">Click any circle to learn more about that area of practice.</p>
+      </div>
+
+      <div class="intro-testimonials">
+        <div class="testimonials">
+          <div class="testimonial"><span class="quote-mark">&ldquo;</span>If we aren't willing to change and keep up with innovation, someone else will.<cite>— Sample client feedback, Transit Agency</cite></div>
+          <div class="testimonial"><span class="quote-mark">&ldquo;</span>Grant strategy that actually accounts for how agencies really operate — rare, and valuable.<cite>— Sample client feedback, Regional Rail Authority</cite></div>
+          <div class="testimonial"><span class="quote-mark">&ldquo;</span>Turned a stalled mobility management plan into something our board could actually act on.<cite>— Sample client feedback, County Transportation Authority</cite></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <p>A beautiful photo from a past project, a hot topic in transit funding, or whatever tells the story best — this band is built to hold it.</p>
+      <a class="btn btn-ghost-white" href="blog.html">Read the Latest</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<div class="rc-popup-overlay" id="rcPopupOverlay"></div>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+<script>
+  renderHeader({ page: "index" });
+  renderFooter();
+  initWheel();
+</script>
+</body>
+</html>
