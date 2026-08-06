@@ -7,7 +7,7 @@
 <meta name="description" content="Redman Consulting: transportation and mobility planning, grant strategy, and public-policy consulting. Demo site." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:ital@1&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -24,11 +24,7 @@
       </div>
 
       <div class="intro-wheel">
-        <div class="wheel-wrap" id="wheel">
-          <div class="wheel-center">
-            <img src="logo.png" alt="Redman Consulting" />
-          </div>
-        </div>
+        <div class="wheel-wrap" id="wheel"></div>
         <p class="wheel-hint">Click any circle to learn more about that area of practice.</p>
       </div>
 
@@ -54,8 +50,8 @@
 
 <div class="rc-popup-overlay" id="rcPopupOverlay"></div>
 
-<script src="data.js"></script>
-<script src="main.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
 <script>
   renderHeader({ page: "index" });
   renderFooter();
