@@ -9,8 +9,8 @@ const RC_CATEGORIES = [
     name: "Stewardship & Resources",
     tagline: "Natural resources, climate change, the planet",
     description: "How communities plan around the natural systems they depend on — water, land, air, and the climate realities reshaping all three.",
-    color: "#b81f5c",
-    colorDark: "#8f1849",
+    color: "#B12B5D",
+    colorDark: "#8a2148",
     icon: "stewardship"
   },
   {
@@ -18,8 +18,8 @@ const RC_CATEGORIES = [
     name: "Exchange & Distribution",
     tagline: "Funding, markets, and how resources move",
     description: "The flow of money and materials through public systems — grants, budgets, procurement, and the trade-offs that come with each.",
-    color: "#e0213f",
-    colorDark: "#b0182f",
+    color: "#E83241",
+    colorDark: "#b42732",
     icon: "exchange"
   },
   {
@@ -27,8 +27,8 @@ const RC_CATEGORIES = [
     name: "Provisioning",
     tagline: "Housing, food, and basic needs",
     description: "Making sure the built environment actually provides for the people living in it — shelter, nourishment, and everyday essentials.",
-    color: "#df6a2a",
-    colorDark: "#b3521f",
+    color: "#DD5A02",
+    colorDark: "#ac4601",
     icon: "provisioning"
   },
   {
@@ -36,8 +36,8 @@ const RC_CATEGORIES = [
     name: "Transportation",
     tagline: "Mobility, transit, and how people get where they're going",
     description: "Transit planning, freight demand, mobility management, and the grant strategy that keeps public transportation projects funded.",
-    color: "#7a1f3b",
-    colorDark: "#5c1730",
+    color: "#95233D",
+    colorDark: "#741b2f",
     icon: "transportation"
   },
   {
@@ -45,8 +45,8 @@ const RC_CATEGORIES = [
     name: "Technics",
     tagline: "Tools, methods, and technical practice",
     description: "The technical craft behind planning work — data, modeling, and the methods that turn analysis into a workable plan.",
-    color: "#ea7fa1",
-    colorDark: "#c95d81",
+    color: "#EC6F8D",
+    colorDark: "#b8566d",
     icon: "technics"
   },
   {
@@ -54,8 +54,8 @@ const RC_CATEGORIES = [
     name: "Governance",
     tagline: "Policy, regulation, and consensus-building",
     description: "The rules and relationships that make public decisions stick — regulation, coalition-building, and institutional design.",
-    color: "#eeb62d",
-    colorDark: "#c99616",
+    color: "#EEB311",
+    colorDark: "#b98b0d",
     icon: "governance"
   },
   {
@@ -63,8 +63,8 @@ const RC_CATEGORIES = [
     name: "Transformation",
     tagline: "Change, adaptation, and what comes next",
     description: "Where planning meets change management — redevelopment, adaptation, and the messy middle of turning plans into reality.",
-    color: "#ef8a2e",
-    colorDark: "#c66c1c",
+    color: "#FF7046",
+    colorDark: "#c65736",
     icon: "transformation"
   },
   {
@@ -72,8 +72,8 @@ const RC_CATEGORIES = [
     name: "Source",
     tagline: "Research, theory, and where ideas come from",
     description: "The reading, research, and theory underneath the practice — where today's planning problems were first described.",
-    color: "#a08d95",
-    colorDark: "#7d6d74",
+    color: "#A58D9B",
+    colorDark: "#806d78",
     icon: "source"
   }
 ];

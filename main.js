@@ -26,7 +26,7 @@ function renderHeader({ title = null, page = "" } = {}) {
   el.innerHTML = `
   <div class="header-bar">
     <a class="brand" href="index.html">
-      <span class="brand-mark"><img src="logo.png" alt="Redman Consulting logo" /></span>
+      <span class="brand-mark"><img src="logo-circle.svg" alt="Redman Consulting logo" /></span>
       <span class="brand-tagline">Strategic Planning for a Changing Planet</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
@@ -54,7 +54,7 @@ function renderFooter() {
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">Redman Consulting</div>
+        <div class="footer-logo"><img src="logo-horizontal.svg" alt="Redman Consulting" /></div>
         <p>Public-sector planning and grant strategy — transportation, mobility management, and the policy work that connects them. Based in Portland, Oregon.</p>
         <div class="social-row">
           <a href="#" aria-label="LinkedIn">in</a>
@@ -86,27 +86,32 @@ function renderFooter() {
 }
 
 /* ---------------- Category wheel + popup (home page) ---------------- */
-function initWheel() {
+async function initWheel() {
   const wrap = document.getElementById("wheel");
   if (!wrap) return;
 
-  const order = ["provisioning","transportation","technics","governance","transformation","source","stewardship-resources","exchange-distribution"];
-  const nodes = order.map(slug => rcCategoryBySlug(slug));
+  try {
+    const res = await fetch("infographic.svg");
+    if (!res.ok) throw new Error(`fetch failed: ${res.status}`);
+    const markup = await res.text();
+    wrap.innerHTML = markup;
+  } catch (err) {
+    console.error("Could not load infographic.svg", err);
+    wrap.innerHTML = `<p style="text-align:center;color:var(--rc-muted)">Category wheel graphic unavailable.</p>`;
+    return;
+  }
 
-  const radiusPct = 38;
-  nodes.forEach((cat, i) => {
-    const angle = (-90 + i * 45) * (Math.PI / 180);
-    const x = 50 + radiusPct * Math.cos(angle);
-    const y = 50 + radiusPct * Math.sin(angle);
-    const node = document.createElement("button");
-    node.type = "button";
-    node.className = "wheel-node";
-    node.style.left = x + "%";
-    node.style.top = y + "%";
-    node.style.background = `linear-gradient(135deg, ${cat.color}, ${cat.colorDark})`;
-    node.innerHTML = `${rcIconSvg(cat.icon)}<span class="node-label">${cat.name}</span>`;
+  const hotspots = wrap.querySelectorAll(".wheel-hotspot[data-cat]");
+  hotspots.forEach(node => {
+    const cat = rcCategoryBySlug(node.dataset.cat);
+    if (!cat) return;
     node.addEventListener("click", () => openPopup(cat));
-    wrap.appendChild(node);
+    node.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openPopup(cat);
+      }
+    });
   });
 }
 
@@ -121,7 +126,7 @@ function openPopup(cat) {
         <svg class="rc-popup-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0,0 L400,0 L400,10 C300,38 100,38 0,6 Z"/></svg>
       </div>
       <div class="rc-popup-body">
-        <div class="rc-popup-icon" style="background:linear-gradient(135deg, ${cat.color}, ${cat.colorDark})">${rcIconSvg(cat.icon)}</div>
+        <div class="rc-popup-icon">${rcIconSvg(cat.icon)}</div>
         <div class="tagline">${cat.tagline}</div>
         <p>${cat.description}</p>
         <a class="btn btn-solid" style="background:${cat.color};border-color:${cat.color}" href="category.html?cat=${cat.slug}">Explore ${cat.name}</a>
@@ -149,7 +154,7 @@ function renderCategoryGrid() {
       <h3>${cat.name}</h3>
       <div class="card-fade">
         <svg class="card-wave" viewBox="0 0 400 30" preserveAspectRatio="none"><path d="M0,30 L400,30 L400,10 C300,-15 100,-15 0,12 Z"/></svg>
-        <div class="card-icon" style="background:${cat.colorDark}">${rcIconSvg(cat.icon)}</div>
+        <div class="card-icon">${rcIconSvg(cat.icon)}</div>
       </div>
       <div class="card-spacer"></div>
     </a>`).join("");
