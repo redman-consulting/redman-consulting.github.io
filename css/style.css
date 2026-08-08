@@ -621,6 +621,42 @@ p { margin: 0 0 1.1em; }
 .cred-item .degree { font-style: italic; opacity: .92; }
 .cred-item .field { opacity: .92; font-size: .92rem; }
 
+/* ---------- View page ---------- */
+.view-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+.view-page h1 {
+  color: var(--rc-orange);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+.view-page p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--rc-body);
+}
+.view-page .view-aside {
+  font-style: italic;
+  color: var(--rc-muted);
+  margin: -8px 0 26px;
+}
+.view-page .view-emphasis em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--rc-ink);
+}
+.view-page .view-signoff {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--rc-orange);
+  margin-top: 30px;
+}
+
 /* ---------- Contact page ---------- */
 .contact-page { padding: 55px 0 70px; max-width: 640px; }
 .contact-page h1 { color: var(--rc-orange); }
