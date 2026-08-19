@@ -181,7 +181,7 @@ p { margin: 0 0 1.1em; }
 .page-head .header-bar { padding-bottom: 30px; }
 .page-title-band {
   max-width: var(--wrap);
-  margin: 0 auto;
+  margin: 0 auto -50px;
   padding: 4px 32px 30px;
   text-align: center;
 }
