@@ -127,7 +127,7 @@ p { margin: 0 0 1.1em; }
   box-shadow: 0 6px 18px rgba(0,0,0,.12);
   flex: none;
 }
-.brand-mark img { width: 100%; height: auto; }
+.brand-mark img { width: 130%; max-width: none; height: auto; }
 .brand-tagline {
   font-family: var(--font-serif);
   font-style: italic;
