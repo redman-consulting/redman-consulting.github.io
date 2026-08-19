@@ -119,19 +119,7 @@ const RC_ARTICLES = [
       { type: "p", text: "A little shudder arises at the thought of vehicle manufacturers and the insurance and medical industries getting their claws into this conversation." }
     ],
     signoff: "DHR 6-24-2016"
-  },
-  { id: "grant-strategy-transit", cat: "transportation", title: "Building a Grant Strategy That Survives Contact With Reality", date: "June 3, 2026", excerpt: "Winning the grant is the easy part. Here's what it takes to keep a multi-year transit funding strategy on track through changing priorities and budget cycles." },
-  { id: "mobility-management-101", cat: "transportation", title: "What Mobility Management Actually Means", date: "May 18, 2026", excerpt: "A plain-language look at how transit and human-services agencies coordinate to get elderly, disabled, and low-income riders where they need to go." },
-  { id: "freight-demand-modeling", cat: "transportation", title: "Freight Demand Modeling for Non-Engineers", date: "April 22, 2026", excerpt: "You don't need to run the model yourself to ask the right questions about it. A field guide for planners and policy staff." },
-  { id: "climate-resilient-infrastructure", cat: "stewardship-resources", title: "Planning Infrastructure for a Climate That Won't Hold Still", date: "June 10, 2026", excerpt: "Stationarity is dead. What that means for how we size, site, and sequence infrastructure investment." },
-  { id: "watersheds-and-jurisdictions", cat: "stewardship-resources", title: "Watersheds Don't Care About Jurisdictions", date: "May 2, 2026", excerpt: "Natural systems cross city lines. Governance structures usually don't. Here's how that gap gets bridged — or doesn't." },
-  { id: "reading-a-budget", cat: "exchange-distribution", title: "How to Actually Read a Public Agency Budget", date: "May 27, 2026", excerpt: "A working framework for finding out what an agency's budget really prioritizes, not just what the press release says." },
-  { id: "housing-basic-needs", cat: "provisioning", title: "Housing as Infrastructure, Not Just Shelter", date: "April 9, 2026", excerpt: "What changes when a community plans for housing the same way it plans for roads and water systems." },
-  { id: "consensus-building-basics", cat: "governance", title: "Consensus-Building When Nobody Agrees on the Problem", date: "March 30, 2026", excerpt: "Before you can build consensus on a solution, you often have to build consensus on what's actually broken." },
-  { id: "redevelopment-lessons", cat: "transformation", title: "Three Redevelopment Lessons From Projects That Didn't Go As Planned", date: "March 14, 2026", excerpt: "What years of transportation and land-use redevelopment work teach you about managing change nobody fully controls." },
-  { id: "limits-to-growth-again", cat: "source", title: "Revisiting Limits to Growth, Fifty Years Later", date: "February 26, 2026", excerpt: "The 1972 report predicted a lot of what planners are still arguing about today. Worth another look." },
-  { id: "technical-tools-overview", cat: "technics", title: "The Technical Toolkit Every Planning Generalist Should Know", date: "February 11, 2026", excerpt: "You don't have to be a specialist in everything, but you do need to know what each tool is for." },
-  { id: "checklist-culture", cat: "governance", title: "In Defense of the Boring Checklist", date: "January 22, 2026", excerpt: "Grant compliance checklists don't inspire anyone, but they're often the difference between funded and defunded." }
+  }
 ];
 
 function rcArticlesForCategory(slug) {

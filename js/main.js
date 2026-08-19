@@ -186,7 +186,7 @@ function renderCategoryPage() {
         <p>${a.excerpt}</p>
         <a class="read-more" style="color:${cat.color}" href="article.html?cat=${cat.slug}&id=${a.id}">Read More &rarr;</a>
       </div>
-    </div>`).join("") : `<p>No articles published in this category yet — check back soon.</p>`;
+    </div>`).join("") : `<p>More info coming soon. Under development.</p>`;
 
   root.innerHTML = `
     <div class="category-main">
