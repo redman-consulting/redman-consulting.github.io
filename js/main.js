@@ -56,7 +56,8 @@ function renderFooter() {
     <div class="footer-grid">
       <div>
         <div class="footer-logo"><img src="assets/logo-horizontal.svg" alt="Redman Consulting" /></div>
-        <p>Public-sector planning and grant strategy — transportation, mobility management, and the policy work that connects them. Based in Portland, Oregon.</p>
+        <p>Deborah Redman enjoys helping her clients understand the issues they face, expand the range of opportunities available, and take practical steps toward well-considered goals. She sees the big picture, but has her feet on the ground.</p>
+        <p>Deborah has served as a Project Manager for public and private clients, on projects involving all aspects of transportation and urban planning. With 30 years of experience, she provides technical analysis, policy, and strategic planning, and conducts public outreach and involvement efforts on controversial topics, always using a creative, solution-oriented management style to address complex, difficult issues.</p>
         <div class="social-row">
           <a href="#" aria-label="LinkedIn">in</a>
           <a href="#" aria-label="Twitter">tw</a>
