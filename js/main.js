@@ -35,7 +35,7 @@ function renderHeader({ title = null, page = "" } = {}) {
   </div>
   ${title ? `<div class="page-title-band"><h1>${title}</h1></div>` : `<div style="height:30px"></div>`}
   <svg class="header-wave" viewBox="0 0 1500 100" preserveAspectRatio="none">
-    <path d="M0,0 L1500,0 L1500,30 C1150,95 550,95 0,15 Z"/>
+    <path d="M0,0 L1500,0 L1500,8 C1180,8 900,92 0,92 Z"/>
   </svg>`;
 
   const toggle = document.getElementById("navToggle");
