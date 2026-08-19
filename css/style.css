@@ -183,6 +183,7 @@ p { margin: 0 0 1.1em; }
   max-width: var(--wrap);
   margin: 0 auto;
   padding: 4px 32px 30px;
+  text-align: center;
 }
 .page-title-band h1 {
   color: #fff;
