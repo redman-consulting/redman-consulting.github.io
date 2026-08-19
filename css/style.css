@@ -129,7 +129,7 @@ p { margin: 0 0 1.1em; }
 }
 .brand-mark img { width: 130%; max-width: none; height: auto; }
 .brand-tagline {
-  font-family: var(--font-serif);
+  font-family: var(--font-body);
   font-style: italic;
   color: #fff;
   font-size: 1.05rem;
