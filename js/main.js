@@ -226,6 +226,23 @@ function renderArticlePage() {
   renderHeader({ title: cat.name, page: "" });
   document.querySelector(".site-header").style.background = `linear-gradient(100deg, ${cat.color}, ${cat.colorDark})`;
 
+  const hasFullContent = Array.isArray(article.content) && article.content.length > 0;
+
+  if (hasFullContent) {
+    root.innerHTML = `
+      <div class="article-body">
+        <div class="kicker" style="color:${cat.color}">${cat.name}</div>
+        <h1>${article.title}</h1>
+        <p class="article-byline"><strong>${article.byline || article.date}</strong></p>
+        ${renderArticleContentBlocks(article.content)}
+        ${article.signoff ? `<p class="article-signoff"><em>${article.signoff}</em></p>` : ""}
+      </div>
+      <div class="category-side">
+        ${sidebarHtml(cat.slug)}
+      </div>`;
+    return;
+  }
+
   root.innerHTML = `
     <div class="article-body">
       <div class="kicker" style="color:${cat.color}">${cat.name}</div>
@@ -258,4 +275,12 @@ function renderArticlePage() {
       root.querySelector(`.tab-panel[data-panel="${btn.dataset.tab}"]`).classList.add("active");
     });
   });
+}
+
+function renderArticleContentBlocks(blocks) {
+  return blocks.map(block => {
+    if (block.type === "h2") return `<h2>${block.text}</h2>`;
+    if (block.type === "note") return `<p class="article-note"><em>${block.text}</em></p>`;
+    return `<p>${block.text}</p>`;
+  }).join("");
 }

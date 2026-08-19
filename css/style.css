@@ -585,6 +585,10 @@ p { margin: 0 0 1.1em; }
   margin-bottom: 6px;
 }
 .article-body h1 { font-size: 1.8rem; margin-bottom: 22px; }
+.article-body .article-byline { color: var(--rc-muted); font-size: .85rem; margin-bottom: 22px; }
+.article-body .article-note { color: var(--rc-muted); font-size: .92rem; }
+.article-body .article-signoff { color: var(--rc-muted); font-style: italic; margin-top: 30px; }
+.article-body h2 { font-size: 1.25rem; margin-top: 30px; color: var(--rc-ink); }
 .tabs { display: flex; gap: 4px; margin-bottom: 26px; }
 .tab-btn {
   font-family: var(--font-head);
