@@ -201,13 +201,32 @@ p { margin: 0 0 1.1em; }
   align-items: start;
 }
 .intro-copy p { font-size: .97rem; }
-.intro-copy p:first-of-type::first-letter {
+.intro-copy .dropcap::first-letter {
   font-family: var(--font-serif);
   font-size: 2.6rem;
   float: left;
   line-height: .8;
   padding: 4px 8px 0 0;
   color: var(--rc-orange);
+}
+.intro-copy h1 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--rc-orange);
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+.intro-copy .welcome-note {
+  font-style: italic;
+  color: var(--rc-muted);
+  font-size: .88rem;
+  margin-bottom: 22px;
+}
+.intro-copy .lead-tagline {
+  font-weight: 700;
+  color: var(--rc-ink);
+  font-size: 1.02rem;
+  margin-bottom: 24px;
 }
 
 /* ---------- Category wheel ---------- */
