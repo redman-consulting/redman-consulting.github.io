@@ -4,7 +4,7 @@
 
 const RC_NAV = [
   { href: "index.html", label: "Home" },
-  { href: "about.html", label: "About" },
+  { href: "about.html", label: "Credentials" },
   { href: "view.html", label: "View" },
   { href: "blog.html", label: "Blog" },
   { href: "contact.html", label: "Contact" }
@@ -82,7 +82,7 @@ function renderFooter() {
     </div>
     <div class="footer-bottom">
       <span>&copy; ${new Date().getFullYear()} Redman Consulting. All rights reserved. (Demo site)</span>
-      <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="view.html">View</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav>
+      <nav><a href="index.html">Home</a><a href="about.html">Credentials</a><a href="view.html">View</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav>
     </div>
   </div>`;
 }

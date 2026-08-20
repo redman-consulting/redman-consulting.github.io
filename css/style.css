@@ -102,6 +102,7 @@ p { margin: 0 0 1.1em; }
   overflow: hidden;
 }
 .header-bar {
+  position: relative;
   max-width: var(--wrap);
   margin: 0 auto;
   padding: 24px 32px 10px;
@@ -729,10 +730,13 @@ p { margin: 0 0 1.1em; }
     top: 100%; left: 0; right: 0;
     background: var(--rc-orange-dark);
     padding: 10px 32px 24px;
+    z-index: 20;
+    box-shadow: 0 12px 20px rgba(0,0,0,.15);
   }
   .main-nav.open ul { flex-direction: column; align-items: flex-start; gap: 14px; }
   .nav-toggle { display: block; }
   .header-bar { flex-wrap: wrap; }
+  .site-header { overflow: visible; }
   .category-grid { grid-template-columns: 1fr; }
   .article-cards { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
