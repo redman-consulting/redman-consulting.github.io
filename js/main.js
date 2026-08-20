@@ -4,6 +4,7 @@
 
 const RC_NAV = [
   { href: "index.html", label: "Home" },
+  { href: "profile.html", label: "About" },
   { href: "about.html", label: "Credentials" },
   { href: "view.html", label: "View" },
   { href: "blog.html", label: "Blog" },
@@ -55,9 +56,6 @@ function renderFooter() {
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo"><img src="assets/logo-horizontal.svg" alt="Redman Consulting" /></div>
-        <p>Deborah Redman enjoys helping her clients understand the issues they face, expand the range of opportunities available, and take practical steps toward well-considered goals. She sees the big picture, but has her feet on the ground.</p>
-        <p>Deborah has served as a Project Manager for public and private clients, on projects involving all aspects of transportation and urban planning. With 30 years of experience, she provides technical analysis, policy, and strategic planning, and conducts public outreach and involvement efforts on controversial topics, always using a creative, solution-oriented management style to address complex, difficult issues.</p>
         <div class="social-row">
           <a href="#" aria-label="LinkedIn">in</a>
           <a href="#" aria-label="Twitter">tw</a>
@@ -82,7 +80,7 @@ function renderFooter() {
     </div>
     <div class="footer-bottom">
       <span>&copy; ${new Date().getFullYear()} Redman Consulting. All rights reserved. (Demo site)</span>
-      <nav><a href="index.html">Home</a><a href="about.html">Credentials</a><a href="view.html">View</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav>
+      <nav><a href="index.html">Home</a><a href="profile.html">About</a><a href="about.html">Credentials</a><a href="view.html">View</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav>
     </div>
   </div>`;
 }
