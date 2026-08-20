@@ -231,6 +231,23 @@ p { margin: 0 0 1.1em; }
   font-size: 1.02rem;
   margin-bottom: 24px;
 }
+.intro-more { display: none; }
+.intro-more.open { display: block; }
+.read-more-toggle {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0 22px;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: .82rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--rc-orange);
+  cursor: pointer;
+}
+.read-more-toggle:hover { color: var(--rc-orange-dark); text-decoration: underline; }
 
 /* ---------- Category wheel ---------- */
 .wheel-wrap {

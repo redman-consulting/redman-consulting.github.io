@@ -85,6 +85,17 @@ function renderFooter() {
   </div>`;
 }
 
+/* ---------------- Intro "Read More" toggle (home page) ---------------- */
+function initIntroReadMore() {
+  const more = document.getElementById("introMore");
+  const toggle = document.getElementById("introMoreToggle");
+  if (!more || !toggle) return;
+  toggle.addEventListener("click", () => {
+    const open = more.classList.toggle("open");
+    toggle.textContent = open ? "Read Less" : "Read More →";
+  });
+}
+
 /* ---------------- Category wheel + popup (home page) ---------------- */
 async function initWheel() {
   const wrap = document.getElementById("wheel");
