@@ -754,8 +754,11 @@ p { margin: 0 0 1.1em; }
   .nav-toggle { display: block; }
   .header-bar { flex-wrap: wrap; }
   .site-header { overflow: visible; }
+  .intro-grid { grid-template-columns: 1fr; }
   .category-grid { grid-template-columns: 1fr; }
+  .category-page, .article-page { grid-template-columns: 1fr; }
   .article-cards { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .about-page { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
   .page-title-band h1 { font-size: 1.8rem; }
 }
