@@ -234,7 +234,7 @@ p { margin: 0 0 1.1em; }
 .intro-more { display: none; }
 .intro-more.open { display: block; }
 .read-more-toggle {
-  display: inline-block;
+  display: block;
   background: none;
   border: none;
   padding: 0;
