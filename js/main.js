@@ -28,7 +28,7 @@ function renderHeader({ title = null, page = "" } = {}) {
   <div class="header-bar">
     <a class="brand" href="index.html">
       <span class="brand-mark"><img src="assets/logo-circle.svg" alt="Redman Consulting logo" /></span>
-      <span class="brand-tagline">Strategic Planning for a Changing Planet</span>
+      <span class="brand-tagline">Strategic Planning for<br>a Changing Planet</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
     <nav class="main-nav" id="mainNav"><ul>${navLinks}</ul></nav>
