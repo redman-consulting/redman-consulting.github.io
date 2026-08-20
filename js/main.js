@@ -80,7 +80,7 @@ function renderFooter() {
     </div>
     <div class="footer-bottom">
       <span>&copy; ${new Date().getFullYear()} Redman Consulting. All rights reserved. (Demo site)</span>
-      <nav><a href="index.html">Home</a><a href="profile.html">About</a><a href="about.html">Credentials</a><a href="view.html">View</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav>
+      <nav><a href="index.html">Home</a><a href="about.html">Credentials</a><a href="view.html">View</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></nav>
     </div>
   </div>`;
 }
