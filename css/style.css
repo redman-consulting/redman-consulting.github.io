@@ -136,6 +136,7 @@ p { margin: 0 0 1.1em; }
   opacity: .95;
   max-width: 260px;
 }
+.brand-tagline .tagline-line { white-space: nowrap; }
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -732,7 +733,6 @@ p { margin: 0 0 1.1em; }
   .main-nav.open ul { flex-direction: column; align-items: flex-start; gap: 14px; }
   .nav-toggle { display: block; }
   .header-bar { flex-wrap: wrap; }
-  .brand-tagline { display: none; }
   .category-grid { grid-template-columns: 1fr; }
   .article-cards { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
